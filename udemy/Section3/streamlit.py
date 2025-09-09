@@ -1,8 +1,11 @@
 import streamlit as st
 import joblib
 
-model = joblib.load('linear_regression_model.pk1')
-scaler = joblib.load('scaler.pk1')
+chemin = "udemy/"
+
+
+model = joblib.load(chemin + 'linear_regression_model.pk1')
+scaler = joblib.load(chemin + 'scaler.pk1')
 st.title("Titre")
 st.write("Entrer le nombre of hours")
 
