@@ -16,6 +16,6 @@ if st.button("Predict"):
         data = [[hours]]
         scaled_data = scaler.transform(data)
         prediction = model.predict(scaled_data)
-        st.write(f"Prediction: {prediction[0]}")
+        st.write(f"Prediction: {prediction[0][0]}")
     except Exception as e :
         st.error(e)
